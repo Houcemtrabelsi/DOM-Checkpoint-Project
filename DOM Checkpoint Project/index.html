@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <title>shoping</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="somme1">Total price:0<span>$</span></h1>
+    </header>
+
+    <div class="container">
+      <ul class="list-group" id="items">
+        <li class="list-group-item ">
+          <div class="d-flex flex-row justify-content-around align-items-center">
+            <img src="./src/index.jpg"  class="img" />
+            <h1>Item 1</h1>
+            <h1 class="price1">Price: 100$</h1>
+            <form>
+                <input type="button" onclick="removeValue(1)" value="-" />
+                <input type="text" id="number1" value="0"/>
+                <input type="button" onclick="incrementValue(1)" value="+" />
+         </form>
+            <button class="btn btn-outline-danger btn-sm float-right delete">x</button>
+          </div>
+        </li>
+        <li class="list-group-item ">
+          <div class="d-flex flex-row justify-content-around align-items-center">
+            <img src="./src/img2.jpg"  class="img"  />
+            <h1>Item 2</h1>
+            <h1 class="price2">Price: 200$</h1>
+            <form>
+                <input type="button" onclick="removeValue(2)" value="-" />
+                <input type="text" id="number2" value="0"/>
+                <input type="button" onclick="incrementValue(2)" value="+" />
+         </form>
+            <button class="btn btn-outline-danger delete">x</button>
+          </div>
+        </li>
+        <li class="list-group-item ">
+          <div class="d-flex flex-row justify-content-around align-items-center">
+            <img src="./src/img3.jpg"  class="img" />
+            <h1>Item 3</h1>
+            <h1 class="price3">Price: 300$</h1>
+            <form>
+                <input type="button" onclick="removeValue(3)" value="-" />
+                <input type="text" id="number3" value="0"/>
+                <input type="button" onclick="incrementValue(3)" value="+" />
+         </form>
+            <button class="btn btn-outline-danger delete">x</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="index.js"></script> 
+  </body>
+</html>
